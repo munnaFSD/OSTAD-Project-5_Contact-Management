@@ -10,7 +10,7 @@ def add_data(all_contacts):
         return
 
     #valid phone and email check
-    if ('@' and '.' in email) and (email[-3:] == 'com'):
+    if '@gmail.com' in email:
         phone = input("Enter your Phone Number: ").strip()
         if os.path.exists("contacts.json"):
             if ((len(phone)) == 11) and (phone.isdigit()) and ((phone[:2]) == '01'):
